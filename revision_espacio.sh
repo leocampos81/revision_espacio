@@ -97,7 +97,7 @@ procesar_directorio() {
     declare -a LISTA_ARCHIVOS_CRUDA
     # Buscar archivos, aplicar exclusiones, obtener tamaño y fecha, ordenar por tamaño, tomar los N primeros
     mapfile -t LISTA_ARCHIVOS_CRUDA < <(eval sudo find \""$DIRECTORIO_OBJETIVO"\" -type f "$EXCLUSION_FIND_PART" -print0 | \
-        xargs -0 du -h --time --time-style=+%Y-%m-%d\ %H:%M 2>/dev/null | \
+        xargs -0 du -h --time --time-style=+%d-%m-%Y\ %H:%M 2>/dev/null | \
         sort -rh | head -n "$NUM_FILES_A_MOSTRAR")
 
     if [ ${#LISTA_ARCHIVOS_CRUDA[@]} -eq 0 ]; then
