@@ -4,7 +4,7 @@
 NUM_FILES_A_MOSTRAR=20     # Número de archivos más pesados a mostrar
 EXTENSION_COMPRIMIDO=".tar.gz" # Extensión para los archivos comprimidos.
 RUTA_LOG="/tmp"          # Directorio base donde se guardará el archivo de log.
-PREFIJO_LOG="auditoria_espacio_" # Prefijo para el nombre del archivo de log.
+PREFIJO_LOG="revision_espacio_" # Prefijo para el nombre del archivo de log.
 
 # Extensiones de archivos a EXCLUIR de la búsqueda (archivos ya comprimidos o similares)
 # Puedes añadir más si lo necesitas, separados por espacios
