@@ -1,0 +1,26 @@
+#!/bin/bash
+
+es_primo() {
+  local n=$1
+  if (( n < 2 )); then
+    return 1
+  fi
+  for (( i=2; i*i<=n; i++ )); do
+    if (( n % i == 0 )); then
+      return 1
+    fi
+  done
+  return 0
+}
+
+contador=0
+numero=2
+
+while (( contador < 100 )); do
+  if es_primo "$numero"; then
+    ((contador++))
+    echo "$contador. $numero"
+  fi
+  ((numero++))
+done
+
