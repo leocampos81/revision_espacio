@@ -1,3 +1,3 @@
-<h1> Script de revisión de espacio para Linux</h1>
+<h1> Scripts para trabajo desde consola</h1>
 
-#### Script creado para revisar espacios en directorios/archivos linux que adicionalmente crea log de lo realizado.
+#### Repo para guardar scripts que vaya creando para trabajar conectado por consola
